@@ -49,5 +49,5 @@ def abrir_navegador():
     webbrowser.get(chrome_path).open("http://127.0.0.1:5500/")
     
 if __name__ == '__main__':
-    threading.Timer(1.0, abrir_navegador).start()
-    app.run(debug=True, port=5500)
+    port = int(os.environ.get("PORT", 5000))  # Pega a porta da Railway
+    app.run(debug=True, host='0.0.0.0', port=port)
