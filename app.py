@@ -46,8 +46,8 @@ def get_air_quality():
 # 🚀 Função para abrir o navegador automaticamente
 def abrir_navegador():
     chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe %s"
-    webbrowser.get(chrome_path).open("http://127.0.0.1:5000/")
+    webbrowser.get(chrome_path).open("http://127.0.0.1:5500/")
     
 if __name__ == '__main__':
     threading.Timer(1.0, abrir_navegador).start()
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5500)
