@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify, send_from_directory
 import requests
 import os
-import webbrowser
-import threading
 
 app = Flask(__name__, static_folder='static')
 
@@ -43,11 +41,6 @@ def get_air_quality():
         print(f"Ocorreu um erro inesperado no backend: {e}")
         return jsonify({"error": "Ocorreu um erro inesperado no servidor."}), 500
 
-# 🚀 Função para abrir o navegador automaticamente
-def abrir_navegador():
-    chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe %s"
-    webbrowser.get(chrome_path).open("http://127.0.0.1:5500/")
-    
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))  # Pega a porta da Railway
-    app.run(debug=True, host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 5000))  # Importante para o Railway
+    app.run(debug=False, host='0.0.0.0', port=port)
