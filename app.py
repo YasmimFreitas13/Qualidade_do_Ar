@@ -24,6 +24,8 @@ def get_air_quality():
     url = f"https://api.api-ninjas.com/v1/airquality?city={cidade}"
     headers = {"X-Api-Key": API_KEY}
 
+    print(f"DEBUG: Recebida requisição para a cidade: {cidade}")
+    
     try:
         resposta = requests.get(url, headers=headers)
         resposta.raise_for_status()
