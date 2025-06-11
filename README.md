@@ -14,66 +14,10 @@ A aplicação é construída com Python (Flask) para o backend e HTML, CSS e Jav
 
 ## Tecnologias Utilizadas
 
-- **Backend:**
-    - Python (linguagem de programação)
-    - Flask (framework web para Python)
-- **Frontend:**
-    - HTML5 (estrutura da página)
-    - CSS3 (estilização e design)
-    - JavaScript (interatividade e lógica de consulta)
+Backend:
+<p> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="40" height="40"/> </p>
 
-## Como Rodar o Projeto Localmente
+Frontend:
+<p> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/> </p>
 
-Siga os passos abaixo para configurar e executar a aplicação em sua máquina local.
 
-### Pré-requisitos
-
-Certifique-se de ter instalado:
-- [Python 3.x](https://www.python.org/downloads/)
-- [pip](https://pip.pypa.io/en/stable/installation/) (gerenciador de pacotes do Python, geralmente vem com o Python)
-
-### Instalação
-
-1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/YasmimFreitas13/Qualidade_do_Ar.git](https://github.com/YasmimFreitas13/Qualidade_do_Ar.git)
-    ```
-
-2.  **Navegue até o diretório do projeto:**
-    ```bash
-    cd Qualidade_do_Ar
-    ```
-
-3.  **Crie e ative um ambiente virtual (recomendado):**
-    ```bash
-    python -m venv venv
-    # No Windows:
-    .\venv\Scripts\activate
-    # No macOS/Linux:
-    source venv/bin/activate
-    ```
-
-4.  **Instale as dependências do backend:**
-    Se você tiver um arquivo `requirements.txt` (com `Flask` listado, por exemplo):
-    ```bash
-    pip install -r requirements.txt
-    ```
-    Se não tiver, instale o Flask diretamente:
-    ```bash
-    pip install Flask
-    ```
-
-### Execução
-
-1.  **Inicie o servidor Flask:**
-    ```bash
-    python app.py
-    ```
-    Você deverá ver uma mensagem no terminal indicando que o servidor está rodando, algo como:
-    `* Running on http://127.0.0.1:5000/`
-
-2.  **Acesse a aplicação no navegador:**
-    Abra seu navegador e vá para:
-    [http://127.0.0.1:5000/](http://127.0.0.1:5000/)
-
-## Estrutura do Projeto
